@@ -144,6 +144,26 @@
     color: #fff;
     text-shadow: none;
   }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown--menu {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown--menu {
+    background: rgb (241, 244, 248);
+    border-radius: 4px;
+    display: block;
+    list-style: none;
+    padding: 24px;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 240px;
+  }
   </style>
 </head>
 
@@ -332,7 +352,47 @@
     <section>
       <h2>Marketing</h2>
       <ul>
-        <li><a href="http://staurus.net/best-seo-marketing-tools.html" title="Полный список интернет-маркетинга">Полный список</a></li>
+        <li>
+        <a class="dropdown" href="http://staurus.net/best-seo-marketing-tools.html" title="Полный список интернет-маркетинга">
+          Полный список
+          <ul class="dropdown--menu">
+            <li>Ahrefs</li>
+            <li>Built With</li>
+            <li>Cached Pages</li>
+            <li>Crazy Egg</li>
+            <li>Google AdWords</li>
+            <li>Google Alerts</li>
+            <li>Google Analytics</li>
+            <li>Google Key Word Planner</li>
+            <li>Google Mobile Friendly</li>
+            <li>Google PageSpeed</li>
+            <li>Google Trends</li>
+            <li>Google Webmaster</li>
+            <li>Hootsuite</li>
+            <li>MailChimp</li>
+            <li>Majestic SEO</li>
+            <li>MozBar</li>
+            <li>Nibbler</li>
+            <li>Open Site Explorer</li>
+            <li>Rich Snippets Testing Tool</li>
+            <li>SEMRush</li>
+            <li>SEOquake</li>
+            <li>SimilarWeb</li>
+            <li>SpyFu</li>
+            <li>SpyWords</li>
+            <li>StatCounter</li>
+            <li>W3C mobileOK Checker</li>
+            <li>Xenu's Link Sleuth</li>
+            <li>Главред</li>
+            <li>Кабинет Вебмастера Mail.ru</li>
+            <li>Реклама Facebook</li>
+            <li>Типограф</li>
+            <li>Яндекс.WordStat </li>
+            <li>Яндекс.Директ</li>
+            <li>Яндекс.Метрика</li>
+          </ul>
+        </a>
+        </li>
         <li><a href="http://www.similarweb.com/" title="SimilarWeb">SimilarWeb</a></li>
         <li><a href="https://ru.ahrefs.com/content-explorer/overview/v3/table/1d/en/1/rank_desc?topic=trading" title="ahrefs Content Explorer">ahrefs Content Explorer</a></li>
         <li><a href="https://ahrefs.com/" title="ahrefs">ahrefs</a></li>
