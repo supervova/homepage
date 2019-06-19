@@ -1,0 +1,116 @@
+/*
+|-------------------------------------------------------------------------------
+| SELECTED
+|-------------------------------------------------------------------------------
+| 1) I don't use "font: 0/0" and ".ir:before" solutions to implement absolute
+| positioning with ems and prevent erros in old Firefoxes and IEs
+| 2) .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+| 3) .box-sizing(border-box);
+| 4) .transition(all 0.2s ease-in-out);
+| 5) Text overflow - Requires inline-block or block for proper styling
+| 6) Escape function
+| 7) Add an alphatransparency value to any background or border color
+|
+*/
+/*
+|---------------------------------------
+| Internet explorer's cures
+|---------------------------------------
+| 1) IE7 inline-block hack
+| 2) IE7 likes to collapse whitespace on either side of the inline-block
+| elements. Right version is for icons, which come before.
+|
+*/
+/*
+|-------------------------------------------------------------------------------
+| BACKGROUNDS
+|-------------------------------------------------------------------------------
+| 1) #gradient > .vertical(#fff, #000);
+| 2) FF 3.6+
+| 3) Safari 4+, Chrome 2+
+| 4) Safari 5.1+, Chrome 10+
+| 5) Opera 11.10
+| 6) Standard, IE10
+| 7) IE9 and down
+| 8) #gradient > .vertical-three-colors(#fff, #CCC, 44%, #000);
+| 9) Gradient-linear will set the background to a pleasing blend of these,
+| to support IE<=9
+| 10) Darken IE7 buttons by default so they stand out more given they won't have
+| borders
+| 11) In these cases the gradient won't cover the background, so we override
+| 12)  IE 7 + 8 can't handle box-shadow to show active, so we darken a bit
+| ourselves
+|
+*/
+/* Gradients */
+/* Buttons and alerts gradients */
+/* Button backgrounds */
+/* Reset filters for IE */
+/*
+|-------------------------------------------------------------------------------
+| Grid
+|-------------------------------------------------------------------------------
+| 1) #grid > .offset(4);
+| 2) IE cure - absolute width is less by one pixel
+| 3) ! Greater than half - More than one part.
+| I'm not sure that math is correct. Need to check
+| 4) First-child offset
+| 5) ! Wrong math! @todo - fix it.
+*/
+/*
+|-------------------------------------------------------------------------------
+| PHOTO FILTERS
+|-------------------------------------------------------------------------------
+| 1) .filter(blur(40px) grayscale(1));
+|
+*/
+/*
+|-------------------------------------------------------------------------------
+| UTILITIES
+|-------------------------------------------------------------------------------
+*/
+/* Webkit-style focus */
+/*
+|-------------------------------------------------------------------------------
+| FORMS
+|-------------------------------------------------------------------------------
+*/
+/* Block level inputs */
+/* Placeholder text */
+/*
+|-------------------------------------------------------------------------------
+| CSS3 PROPERTIES
+|-------------------------------------------------------------------------------
+*/
+/*Opacity*/
+/* Transitions */
+/* CSS3 Content Columns */
+/* Transformations */
+/* Backface visibility
+    Prevent browsers from flickering when using CSS 3D transforms.
+    Default value is `visible`, but can be changed to `hidden
+    See git pull https://github.com/dannykeane/bootstrap.git backface-visibility for examples*/
+/* Background clipping
+    Heads up: FF 3.6 and under need "padding" instead of "padding-box" */
+/* Background sizing */
+/* User select - For selecting text on the page */
+/* Resize anything */
+.info {
+  background-color: #121314;
+  background-image: -moz-linear-gradient(top, #000, #2d2f33);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(#2d2f33));
+  background-image: -webkit-linear-gradient(top, #000, #2d2f33);
+  background-image: -o-linear-gradient(top, #000, #2d2f33);
+  background-image: linear-gradient(to bottom, #000, #2d2f33);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#000, endColorstr=#2d2f33, GradientType=0);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  clear: right;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0 5px;
+  height: 40px;
+}
