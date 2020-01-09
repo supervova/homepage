@@ -1,0 +1,6 @@
+title: Nikishin became Supermark
+
+markdown: kramdown
+plugins:
+  - jekyll-redirect-from
+
